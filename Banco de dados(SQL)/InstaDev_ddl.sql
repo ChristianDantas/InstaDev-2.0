@@ -15,6 +15,7 @@ CREATE TABLE Usuario
  ,Email VARCHAR (200) NOT NULL UNIQUE
  ,Senha VARCHAR (24)NOT NULL
  ,fotoPerfil image
+ ,Seguidores INT
 );
 CREATE TABLE Publicacao
 (
@@ -24,7 +25,7 @@ CREATE TABLE Publicacao
  ,descricao VARCHAR(200)
 );
 
---DROP DATABASE InstaDev
+DROP DATABASE InstaDev
 
 
  UPDATE Usuario SET fotoPerfil = 'user.png' WHERE idUsuario > 0;
